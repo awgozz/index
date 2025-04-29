@@ -159,6 +159,7 @@ button:active {
 }
 
 /* Responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
     .hero {
         height: auto;
@@ -177,39 +178,26 @@ button:active {
 
     .time {
         padding: 15px;
+        width: 100%;
     }
 
     .time h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .time p, .time span {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     footer {
-        background-color: #b38cbf; /* Cor ajustada para dispositivos móveis */
-        padding: 15px 0; /* Aumenta o padding para mais espaço */
-        font-size: 1rem; /* Aumenta o tamanho da fonte */
-        text-align: center; /* Garante que o texto esteja centralizado */
+        background-color: #b38cbf;
+        padding: 15px 0;
+        font-size: 1rem;
     }
 
     .rodape {
-        font-size: 1.2rem; /* Aumenta o tamanho da fonte do contador */
-        padding: 5px 10px; /* Adiciona mais espaço interno */
-        margin: 5px auto; /* Centraliza e ajusta o espaçamento */
-    }
-
-    #sobreLink {
-        font-size: 1rem; /* Ajusta o tamanho da fonte do link */
-        color: #fff;
-        padding: 5px 10px;
-    }
-
-    #sobreLink:hover {
         font-size: 1rem;
-        color: #b30000;
         padding: 5px 10px;
+        margin: 5px auto;
     }
 }
-
