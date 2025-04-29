@@ -33,18 +33,18 @@
     </footer>
 
     <script src="script.js"></script>
-   <script>
+   <script//>
         // Data alvo para habilitar o link
         const targetDate = new Date("May 16, 2025 00:00:00").getTime();
         const currentDate = new Date().getTime();
         const sobreLink = document.getElementById('sobreLink');
 
-       // if (currentDate < targetDate) {
+        if (currentDate < targetDate) {
             sobreLink.addEventListener('click', function(event) {
                 event.preventDefault();
                 alert('A página "Mensagem de amor" estará disponível a partir de 16/05/2025.');
             });
-       // }
+        }
     </script>
 </body>
 </html>
