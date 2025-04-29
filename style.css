@@ -1,39 +1,43 @@
-*{
- padding: 0;
+/* Estilos globais */
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: cursive, impact;
 }
-    
-    .hero{
-        height: 100vh;
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/namoro.jpg');
-        background-size:contain;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;    
-        color: wheat;
-    }
-    h1{
-        font-size: 4rem;
-        font-weight: 500;
-        margin-bottom: 50px;
-        color: #f5f37c;
-        text-transform: uppercase;
-        text-align: center;
-    }
-.timebox{
-    display: flex;  
-    gap: 50px;   
-    justify-content: center;
 
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/namoro.jpg');
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: wheat;
 }
-.time{
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #f5f37c;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Timebox */
+.timebox {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.time {
     text-align: center;
     justify-content: center;
     color: #d2f145;
-    text-align: center;
     border: 10px solid #f0bbfd;
     border-radius: 20px;
     margin: 0 5px;
@@ -43,47 +47,42 @@
     padding: 20px;
 }
 
-.time h2{
+.time h2 {
     font-size: 5rem;
     font-weight: 100;
     margin-bottom: 10px;
 }
 
-.time p{
+.time p, .time span {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.time span{
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-footer{
-    background-color: rgba(209, 178, 195, 0.2); /* Cor de fundo com transparência */
-    color: #fff; /* Cor do texto */
+/* Footer */
+footer {
+    background-color: rgba(209, 178, 195, 0.2);
+    color: #fff;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 0px 0; /* Adiciona padding */
-    font-size: 1rem; /* Tamanho da fonte */
-    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque */
-
+    padding: 5px 0;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
 }
 
-.rodape{
-    color: #fff; /* Cor do texto */
-    bottom: 0;
+.rodape {
+    color: #fff;
     justify-content: space-between;
-    padding: 1px 0; /* Adiciona padding */
-    border: 2px solid #fff; /* Adiciona borda */
+    padding: 1px 0;
+    border: 2px solid #fff;
     border-radius: 15px;
     margin: 0 5px;
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 1rem;
 }
+
+/* Popup */
 .popup {
     position: fixed;
     top: 0;
@@ -120,27 +119,29 @@ footer{
     display: none;
 }
 
+/* Botão */
 button {
-    display: inline-block; /* Garante que o botão tenha apenas o tamanho do conteúdo */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
-    font-size: 1rem; /* Define o tamanho da fonte */
-    color: #46451b; /* Cor do texto */
-    background-color: #e7cfe9; /* Cor de fundo */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    cursor: pointer; /* Mostra o cursor de "mão" ao passar sobre o botão */
-    text-align: center; /* Centraliza o texto */
-    margin: 10px auto; /* Adiciona margem */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #46451b;
+    background-color: #e7cfe9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto;
 }
 
 button:hover {
-    background-color: #d2a3e0; /* Cor de fundo ao passar o mouse */
+    background-color: #d2a3e0;
 }
 
 button:active {
-    background-color: #b88cc0; /* Cor de fundo ao clicar */
+    background-color: #b88cc0;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     .hero {
         height: auto;
@@ -168,11 +169,10 @@ button:active {
     .time p, .time span {
         font-size: 1.2rem;
     }
-   
-    footer{
-        padding: 5px;
-        font-size: 0.8rem; /* Tamanho da fonte para telas menores */
-    }
 
+    footer {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
 }
 
