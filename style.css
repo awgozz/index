@@ -62,15 +62,15 @@ h1 {
 
 /* Footer */
 footer {
-    background-color: rgba(209, 178, 195, 0.2);
-    color: #fff;
+    background-color: #d1b2c3; /* Cor sólida para maior visibilidade */
+    color: #fff; /* Cor do texto */
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: 5px 0;
     font-size: 1rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Mantém o desfoque */
 }
 #sobreLink{
     color: #ffffff;
@@ -188,7 +188,8 @@ button:active {
     }
 
     footer {
-        padding: 5px;
+        background-color: #b38cbf; /* Cor ajustada para dispositivos móveis */
+        padding: 10px 0;
         font-size: 0.8rem;
     }
     #sobreLink{
