@@ -71,7 +71,23 @@ footer {
     font-size: 1rem;
     backdrop-filter: blur(10px);
 }
-
+#sobreLink{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+#sobreLink:hover{
+    color: #b30000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: 0.3s;
+}   
 .rodape {
     color: #fff;
     justify-content: space-between;
