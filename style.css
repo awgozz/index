@@ -1,0 +1,178 @@
+*{
+ padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive, impact;
+}
+    
+    .hero{
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/namoro.jpg');
+        background-size:contain;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        color: wheat;
+    }
+    h1{
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 50px;
+        color: #f5f37c;
+        text-transform: uppercase;
+        text-align: center;
+    }
+.timebox{
+    display: flex;  
+    gap: 50px;   
+    justify-content: center;
+
+}
+.time{
+    text-align: center;
+    justify-content: center;
+    color: #d2f145;
+    text-align: center;
+    border: 10px solid #f0bbfd;
+    border-radius: 20px;
+    margin: 0 5px;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.time h2{
+    font-size: 5rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.time p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.time span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: rgba(209, 178, 195, 0.2); /* Cor de fundo com transparência */
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 0; /* Adiciona padding */
+    font-size: 1rem; /* Tamanho da fonte */
+    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque */
+
+}
+
+.rodape{
+    color: #fff; /* Cor do texto */
+    bottom: 0;
+    justify-content: space-between;
+    padding: 1px 0; /* Adiciona padding */
+    border: 2px solid #fff; /* Adiciona borda */
+    border-radius: 15px;
+    margin: 0 5px;
+    font-size: 1rem; /* Tamanho da fonte */
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.popup-hidden {
+    display: none;
+}
+
+button {
+    display: inline-block; /* Garante que o botão tenha apenas o tamanho do conteúdo */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    font-size: 1rem; /* Define o tamanho da fonte */
+    color: #46451b; /* Cor do texto */
+    background-color: #e7cfe9; /* Cor de fundo */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de "mão" ao passar sobre o botão */
+    text-align: center; /* Centraliza o texto */
+    margin: 10px auto; /* Adiciona margem */
+}
+
+button:hover {
+    background-color: #d2a3e0; /* Cor de fundo ao passar o mouse */
+}
+
+button:active {
+    background-color: #b88cc0; /* Cor de fundo ao clicar */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .timebox {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .time {
+        padding: 15px;
+    }
+
+    .time h2 {
+        font-size: 3rem;
+    }
+
+    .time p, .time span {
+        font-size: 1.2rem;
+    }
+   
+    footer{
+        padding: 5px;
+        font-size: 0.8rem; /* Tamanho da fonte para telas menores */
+    }
+
+}
+

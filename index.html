@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Nosso dia♥♥♥</h1>
+        <div class="timebox">
+            <div class="time">
+                <h2 id="dia">00</h2>
+                <p>Dias</p>
+            </div>
+            <div class="time">
+                <h2 id="horas">00</h2>
+                <p>Horas</p>
+            </div>
+            <div class="time">
+                <h2 id="minutos">00</h2>
+                <p>Minutos</p>
+            </div>
+            <div class="time">
+                <h2 id="segundos">00</h2>
+                <p>Segundos</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p><a href="sobre.html" id="sobreLink">Mensagem de amor</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Data alvo para habilitar o link
+        const targetDate = new Date("May 16, 2025 00:00:00").getTime();
+        const currentDate = new Date().getTime();
+        const sobreLink = document.getElementById('sobreLink');
+
+        if (currentDate < targetDate) {
+            sobreLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                alert('A página "Mensagem de amor" estará disponível a partir de 16/05/2025.');
+            });
+        }
+    </script>
+</body>
+</html>
