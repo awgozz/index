@@ -191,5 +191,13 @@ button:active {
         padding: 5px;
         font-size: 0.8rem;
     }
+    #sobreLink{
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    #sobreLink:hover{
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
 }
 
