@@ -10,9 +10,10 @@
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/namoro.jpg');
-    background-size: contain;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/namoro.jpg');
+    background-size: cover; /* Garante que a imagem preencha toda a área */
     background-position: center;
+    background-repeat: no-repeat; /* Evita repetição da imagem */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,15 +63,18 @@ h1 {
 
 /* Footer */
 footer {
-    background-color: rgba(209, 178, 195, 0.2);
+    background-color: rgba(209, 178, 195, 0.8); /* Ajuste a opacidade conforme necessário */
     color: #fff;
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    padding: 5px 0;
+    left: 0;
+    width: 100%; /* Garante que o rodapé cubra toda a largura */
+    padding: 10px 0;
     font-size: 1rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Mantém o desfoque */
+    z-index: 1000; /* Garante que o rodapé fique acima de outros elementos */
+    border: none; /* Remove qualquer borda */
 }
 #sobreLink{
     color: #ffffff;
@@ -159,7 +163,6 @@ button:active {
 }
 
 /* Responsividade */
-/* Responsividade */
 @media (max-width: 768px) {
     .hero {
         height: auto;
@@ -190,9 +193,10 @@ button:active {
     }
 
     footer {
-        background-color: #b38cbf;
+        background-color: rgba(209, 178, 195, 0.8); /* Mantém a cor de fundo */
         padding: 15px 0;
         font-size: 1rem;
+        border: none; /* Remove qualquer borda */
     }
 
     .rodape {
