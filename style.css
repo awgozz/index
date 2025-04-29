@@ -188,15 +188,25 @@ button:active {
     }
 
     footer {
-        padding: 5px;
-        font-size: 0.8rem;
+        background-color: #b38cbf; /* Cor ajustada para dispositivos móveis */
+        padding: 15px 0; /* Aumenta o padding para mais espaço */
+        font-size: 1rem; /* Aumenta o tamanho da fonte */
+        text-align: center; /* Garante que o texto esteja centralizado */
     }
-    #sobreLink{
-        font-size: 1rem;
-        color: #f0bbfd  ;
+
+    .rodape {
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte do contador */
+        padding: 5px 10px; /* Adiciona mais espaço interno */
+        margin: 5px auto; /* Centraliza e ajusta o espaçamento */
+    }
+
+    #sobreLink {
+        font-size: 1rem; /* Ajusta o tamanho da fonte do link */
+        color: #fff;
         padding: 5px 10px;
     }
-    #sobreLink:hover{
+
+    #sobreLink:hover {
         font-size: 1rem;
         color: #b30000;
         padding: 5px 10px;
