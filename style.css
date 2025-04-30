@@ -63,15 +63,17 @@
 
 /* Footer */
 footer {
-    background-color: #d1b2c3; /* Cor sólida para maior visibilidade */
+    background-color: rgba(243, 117, 186, 0.8); /* Fundo semitransparente */
     color: #fff; /* Cor do texto */
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 5px 0;
+    padding: 5px 0; /* Adiciona padding */
     font-size: 1rem;
-    backdrop-filter: blur(10px); /* Mantém o desfoque */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    backdrop-filter: blur(20px); /* Efeito de desfoque no fundo */
 }
 
 .rodape{
@@ -82,7 +84,95 @@ footer {
     border: 2px solid #fff; /* Adiciona borda */
     border-radius: 15px;
     margin: 0 5px;
+    background-color: #cf84ad; /* Cor de fundo do rodapé */
     font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de popup */
+#popupButton {
+    padding: 10px 20px; /* Espaçamento interno para o botão */
+    background-color: #cf84ad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: fit-content; /* Ajusta o botão ao tamanho do texto */
+    display: inline-block; /* Evita que o botão ocupe a largura total */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    white-space: nowrap; /* Impede quebra de linha no texto */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#popupButton:hover {
+    background-color: #b38cbf;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo do popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.popup-hidden {
+    display: none; /* Oculta o popup */
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    position: relative;
+    max-width: 90%;
+    width: 500px;
+    animation: popupFadeIn 0.3s ease; /* Animação ao abrir */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #cf84ad;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #b38cbf;
+}
+#sobreLink{
+    color: #ffffff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+#sobreLink:hover{
+    color: #ff0000; /* Cor do link ao passar o mouse */
+}
+/* Animação para o popup */
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 768px) {
