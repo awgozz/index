@@ -1,171 +1,98 @@
-/* Estilos globais */
-* {
-    padding: 0;
+*{
+ padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: cursive, impact, sans-serif;
-    text-decoration: none;
+    font-family: cursive, impact;
 }
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/namoro.jpg');
-    background-size: cover; /* Garante que a imagem preencha toda a área */
-    background-position: center;
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    display: flex;
-    flex-direction: column;
+    
+    .hero{
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/namoro.jpg');
+        background-size:contain;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        color: wheat;
+    }
+    h1{
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 50px;
+        color: #f5f37c;
+        text-transform: uppercase;
+        text-align: center;
+    }
+.timebox{
+    display: flex;  
+    gap: 50px;   
     justify-content: center;
-    color: wheat;
-}
 
-h1 {
-    font-size: 4rem;
-    font-weight: 500;
-    margin-bottom: 50px;
-    color: #f5f37c;
-    text-transform: uppercase;
-    text-align: center;
 }
-
-/* Timebox */
-.timebox {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
-}
-
-.time {
+.time{
     text-align: center;
     justify-content: center;
     color: #d2f145;
+    text-align: center;
     border: 10px solid #f0bbfd;
     border-radius: 20px;
-    margin: 10px;
+    margin: 0 5px;
     flex-direction: column;
     backdrop-filter: blur(15px);
     text-transform: uppercase;
     padding: 20px;
-    width: 200px; /* Define uma largura fixa */
 }
 
-.time h2 {
-    font-size: 3rem;
+.time h2{
+    font-size: 5rem;
     font-weight: 100;
     margin-bottom: 10px;
 }
 
-.time p, .time span {
-    font-size: 1.2rem;
+.time p{
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
-    background-color: rgba(209, 178, 195, 0.8); /* Ajuste a opacidade conforme necessário */
-    color: #fff;
+.time span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: rgba(209, 178, 195, 0.2); /* Cor de fundo com transparência */
+    color: #fff; /* Cor do texto */
     text-align: center;
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%; /* Garante que o rodapé cubra toda a largura */
-    padding: 10px 0;
-    font-size: 1rem;
-    backdrop-filter: blur(10px); /* Mantém o desfoque */
-    z-index: 1000; /* Garante que o rodapé fique acima de outros elementos */
-    border: none; /* Remove qualquer borda */
-    margin: 0; /* Remove margens indesejadas */
-}
-#sobreLink{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 10px 20px;
-}
-#sobreLink:hover{
-    color: #b30000;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 5px; 
-    cursor: pointer;
-    transition: 0.3s;
-}   
-.rodape {
-    color: #fff;
-    justify-content: space-between;
-    padding: 1px 0;
-    border: 2px solid #fff;
-    border-radius: 15px;
-    margin: 0 5px;
-    font-size: 1rem;
+    width: 100%;
+    padding: 0px 0; /* Adiciona padding */
+    font-size: 1rem; /* Tamanho da fonte */
+    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque */
+
 }
 
-/* Popup */
+.rodape{
+    color: #fff; /* Cor do texto */
+    bottom: 0;
+    justify-content: space-between;
+    padding: 1px 0; /* Adiciona padding */
+    border: 2px solid #fff; /* Adiciona borda */
+    border-radius: 15px;
+    margin: 0 5px;
+    font-size: 1rem; /* Tamanho da fonte */
+}
 .popup {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    
 }
 
-.popup-content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    max-width: 800px;
-    width: 90%;
-    position: relative;
-}
-
-.popup .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.popup-hidden {
-    display: none;
-}
-
-/* Botão */
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #46451b;
-    background-color: #e7cfe9;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    margin: 10px auto;
-}
-
-button:hover {
-    background-color: #d2a3e0;
-}
-
-button:active {
-    background-color: #b88cc0;
-}
-
-/* Responsividade */
 @media (max-width: 768px) {
     .hero {
         height: auto;
@@ -179,32 +106,25 @@ button:active {
 
     .timebox {
         flex-direction: column;
-        gap: 10px; /* Reduz o espaçamento entre os contadores */
+        gap: 20px;
     }
 
     .time {
-        padding: 10px; /* Reduz o padding interno */
-        width: 150px; /* Reduz a largura dos contadores */
+        padding: 15px;
     }
 
     .time h2 {
-        font-size: 2rem; /* Reduz o tamanho do número */
+        font-size: 3rem;
     }
 
     .time p, .time span {
-        font-size: 0.9rem; /* Reduz o tamanho do texto */
+        font-size: 1.2rem;
+    }
+   
+    footer{
+        padding: 5px;
+        font-size: 0.8rem; /* Tamanho da fonte para telas menores */
     }
 
-    footer {
-        background-color: rgba(209, 178, 195, 0.8); /* Mantém a cor de fundo */
-        padding: 15px 0;
-        font-size: 0.9rem; /* Reduz o tamanho da fonte no rodapé */
-        border: none; /* Remove qualquer borda */
-    }
-
-    .rodape {
-        font-size: 0.9rem; /* Reduz o tamanho do texto no rodapé */
-        padding: 5px 10px;
-        margin: 5px auto;
-    }
 }
+
