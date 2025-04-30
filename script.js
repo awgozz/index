@@ -37,6 +37,7 @@ const closePopup = document.getElementById('closePopup');
 // Adiciona um evento de clique ao botão para abrir o popup
 popupButton.addEventListener('click', () => {
     popup.classList.remove('popup-hidden');
+    popup.style.display = 'flex'; // Mostra o popup
 });
 
 // Adiciona um evento de clique ao botão de fechar para ocultar o popup
