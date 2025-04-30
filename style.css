@@ -88,53 +88,51 @@ footer {
     font-size: 1rem; /* Tamanho da fonte */
 }
 
-#popup {
-    display: none; /* Inicialmente oculto */
+/* Popup */
+.popup {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    display: none; /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-    animation: popupFadeIn 0.5s ease; /* Animação de entrada */
-    z-index: 1000; /* Certifique-se de que o popup esteja acima de outros elementos */
-    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    animation: popupFadeIn 0.3s ease; /* Animação ao abrir */
+    position: relative;
 }
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #cf84ad;
+    transition: color 0.3s ease;
+}
+
+.popup .close:hover {
+    color: #b38cbf;
+}
+
+/* Classe para ocultar o popup */
 .popup-hidden {
     display: none; /* Oculta o popup */
 }
-#popupButton {
-    padding: 10px 20px; /* Espaçamento interno */
-    background-color: #cf84ad; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Borda arredondada */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    font-size: 1rem; /* Tamanho da fonte */
-    font-weight: bold; /* Deixa o texto em negrito */
-    text-transform: uppercase; /* Texto em letras maiúsculas */
-    width: fit-content; /* Ajusta o tamanho ao conteúdo */
-    display: inline-block; /* Evita que o botão ocupe largura total */
-    margin: 10px auto; /* Centraliza o botão horizontalmente */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
-}
 
-#popupButton:hover {
-    background-color: #b38cbf; /* Cor ao passar o mouse */
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
- 
-#sobreLink{
-    color: #ffffff; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold; /* Deixa o texto em negrito */
-    transition: color 0.3s ease; /* Transição suave para a cor */
-}
-#sobreLink:hover{
-    color: #ff0000; /* Cor do link ao passar o mouse */
-}
 /* Animação para o popup */
 @keyframes popupFadeIn {
     from {
@@ -145,6 +143,16 @@ footer {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+#sobreLink{
+    color: #ffffff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+#sobreLink:hover{
+    color: #ff0000; /* Cor do link ao passar o mouse */
 }
 
 @media (max-width: 768px) {
