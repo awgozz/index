@@ -29,18 +29,22 @@ function timer(){
 
 setInterval(timer, 1000);
 
-//Seleciona os elementos popup
+// Seleciona os elementos do popup
 const popupButton = document.getElementById('popupButton');
 const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');
+
+// Garante que o popup esteja oculto ao carregar a página
+window.addEventListener('DOMContentLoaded', () => {
+    popup.classList.add('popup-hidden');
+});
 
 // Adiciona um evento de clique ao botão para abrir o popup
 popupButton.addEventListener('click', () => {
     popup.classList.remove('popup-hidden');
 });
 
-//Fecha o Popup No X
+// Adiciona um evento de clique ao botão de fechar para ocultar o popup
 closePopup.addEventListener('click', () => {
     popup.classList.add('popup-hidden');
-}
-)
+});
