@@ -34,11 +34,6 @@ const popupButton = document.getElementById('popupButton');
 const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');
 
-// Garante que o popup esteja oculto ao carregar a página
-window.addEventListener('DOMContentLoaded', () => {
-    popup.classList.add('popup-hidden');
-});
-
 // Adiciona um evento de clique ao botão para abrir o popup
 popupButton.addEventListener('click', () => {
     popup.classList.remove('popup-hidden');
