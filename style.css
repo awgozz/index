@@ -61,17 +61,17 @@
     margin-bottom: 10px;
 }
 
-footer{
-    background-color: rgba(209, 178, 195, 0.2); /* Cor de fundo com transparência */
+/* Footer */
+footer {
+    background-color: #d1b2c3; /* Cor sólida para maior visibilidade */
     color: #fff; /* Cor do texto */
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 0px 0; /* Adiciona padding */
-    font-size: 1rem; /* Tamanho da fonte */
-    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque */
-
+    padding: 5px 0;
+    font-size: 1rem;
+    backdrop-filter: blur(10px); /* Mantém o desfoque */
 }
 
 .rodape{
@@ -84,21 +84,11 @@ footer{
     margin: 0 5px;
     font-size: 1rem; /* Tamanho da fonte */
 }
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-}
 
 @media (max-width: 768px) {
     .hero {
         height: auto;
         padding: 20px;
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/namoro.jpg');
-        background-size: cover;
     }
 
     h1 {
@@ -124,7 +114,8 @@ footer{
     }
    
     footer{
-        padding: 5px;
+        background-color: #b38cbf; /* Cor ajustada para dispositivos móveis */
+        padding: 10px 0;
         font-size: 0.8rem; /* Tamanho da fonte para telas menores */
     }
 
