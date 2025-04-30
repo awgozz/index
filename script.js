@@ -43,4 +43,5 @@ popupButton.addEventListener('click', () => {
 // Adiciona um evento de clique ao botão de fechar para ocultar o popup
 closePopup.addEventListener('click', () => {
     popup.classList.add('popup-hidden');
+    popup.style.display = 'none'; // Oculta o popup
 });
