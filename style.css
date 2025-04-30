@@ -89,15 +89,26 @@ footer {
 }
 
 /* Popup */
-#popupButton{
-    background-color: #cf84ad; /* Cor do botão */
+#popupButton {
+    padding: 5px 10px; /* Ajusta o espaçamento interno */
+    background-color: #cf84ad; /* Cor de fundo */
     color: #fff; /* Cor do texto */
     border: none; /* Remove a borda padrão */
-    padding: 10px 20px; /* Adiciona padding */
     border-radius: 5px; /* Borda arredondada */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
     font-size: 1rem; /* Tamanho da fonte */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-transform: uppercase; /* Texto em letras maiúsculas */
+    width: auto; /* Ajusta o tamanho ao conteúdo do texto */
+    display: inline-block; /* Evita que o botão ocupe largura total */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    text-align: center; /* Centraliza o texto */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+#popupButton:hover {
+    background-color: #b38cbf; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 .popup {
     position: fixed;
