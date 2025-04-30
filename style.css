@@ -89,6 +89,16 @@ footer {
 }
 
 /* Popup */
+#popupButton{
+    background-color: #cf84ad; /* Cor do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Adiciona padding */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
 .popup {
     position: fixed;
     top: 0;
