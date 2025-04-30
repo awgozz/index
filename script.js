@@ -35,8 +35,10 @@ const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');
 
 // Adiciona um evento de clique ao botão para abrir o popup
-popupButton.addEventListener('click', () => {
-    popup.classList.remove('popup-hidden');
+document.getElementById('popupButton').addEventListener('click', function (event) {
+    event.preventDefault(); // Evita comportamento padrão
+    const popup = document.getElementById('popup');
+    popup.classList.remove('popup-hidden'); // Mostra o popup
 });
 
 //Fecha o Popup No X
