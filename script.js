@@ -30,19 +30,12 @@ function timer(){
 setInterval(timer, 1000);
 
 //Seleciona os elementos popup
-const popupButton = document.getElementById('popupButton');
-const popup = document.getElementById('popup');
-const closePopup = document.getElementById('closePopup');
-
-// Adiciona um evento de clique ao botão para abrir o popup
-document.getElementById('popupButton').addEventListener('click', function (event) {
-    event.preventDefault(); // Evita comportamento padrão
+document.getElementById('popupButton').addEventListener('click', function () {
     const popup = document.getElementById('popup');
     popup.classList.remove('popup-hidden'); // Mostra o popup
 });
 
-//Fecha o Popup No X
-closePopup.addEventListener('click', () => {
-    popup.classList.add('popup-hidden');
-}
-)
+document.getElementById('closePopup').addEventListener('click', function () {
+    const popup = document.getElementById('popup');
+    popup.classList.add('popup-hidden'); // Oculta o popup
+});
